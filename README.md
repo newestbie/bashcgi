@@ -1,7 +1,7 @@
 bashcgi
 =======
 
-template for bash and automatic HTTP variable exporting module, help to build a website in bash/cgi
+a template module for bash and an automatic HTTP variable exporting module, help to build a website in bash/cgi
 
 $ chmod +x demo.cgi
 
