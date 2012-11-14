@@ -3,13 +3,13 @@
 function render_template {
 	local _flag=0
 	local _line
-    local _t
+	local _t
 	local _code
 	local LEADSTR
 
 	local IFS=$'\n'
 	while read -r _line; do
-		if [[ -z "$_line" ]]; then
+		if [[ -z "$_line" && $_flag -eq 0 ]]; then
 			echo
 			continue
 		fi
