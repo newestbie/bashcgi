@@ -1,14 +1,8 @@
 bashcgi
 =======
 
-a template module for bash and an automatic HTTP variable exporting module, help to build a website in bash/cgi
+一套使用 bash 编写的网站开发框架
 
-$ chmod +x demo.cgi
+## 演示网站 ##
 
-$ curl 'http://localhost/demo.cgi?greeting=good%20morning'
-
-Hi, momo, good morning.
-
-## a demo website ##
-
-http://www.shellblog.info
+http://www.shellblog.info/demo
