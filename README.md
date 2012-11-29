@@ -12,7 +12,63 @@
 
 ## 教程
 
-待更新
+### param.cgi - get, post, cookie 变量自动导出
+#### http 变量访问
+```
+#!/bin/bash
+
+# 1.cgi
+
+source param.cgi
+
+echo "Content-Type: text/plain"
+echo
+
+echo $_GET_var
+
+# $_POST_xxxx 获取 post 变量
+# $_COOKIE_yyyy 访问 cookie 变量
+```
+#### 遍历所有 get(post, cookie) 变量
+```
+#!/bin/bash
+
+# 2.cgi
+
+source param.cgi
+
+echo "Content-Type: text/plain"
+echo
+
+for k in ${_GET[@]}; do
+    eval "v=\$_GET_$k"
+    echo "$k => $v"
+done
+
+# ${_POST[@]}
+# ${_COOKIE[@]}
+```
+
+### template.cgi - 模版功能
+```
+<? # 3.t ?>
+<h3>hello, <? echo -n $name ?><h3>
+```
+
+```
+#!/bin/bash
+
+# 3.cgi
+
+source template.cgi
+
+name="momo"
+render_template 3.t
+```
+
+### lib - 实用函数
+
+### 简单的例子
 
 ## 演示网站
 
