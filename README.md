@@ -29,6 +29,7 @@ echo $_GET_var
 # $_POST_xxxx 获取 post 变量
 # $_COOKIE_yyyy 访问 cookie 变量
 ```
+
 #### 遍历所有 get(post, cookie) 变量
 ```
 #!/bin/bash
@@ -49,7 +50,7 @@ done
 # ${_COOKIE[@]}
 ```
 
-### template.cgi - 模版功能
+#### template.cgi - 模版功能
 ```
 <? # 3.t ?>
 <h3>hello, <? echo -n $name ?><h3>
@@ -65,6 +66,7 @@ source template.cgi
 name="momo"
 render_template 3.t
 ```
+
 ### 完整的例子
 见 demo 目录
 
