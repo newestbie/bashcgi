@@ -12,7 +12,15 @@
 
 ## 教程
 
-待更新
+### param.cgi - get, post, cookie 参数自动导出
+```
+    echo "eee"
+```
+### template.cgi - 模版功能
+
+### lib - 实用函数
+
+### 简单的例子
 
 ## 演示网站
 
