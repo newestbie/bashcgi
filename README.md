@@ -50,7 +50,7 @@ done
 # ${_COOKIE[@]}
 ```
 
-#### template.cgi - 模版功能
+### template.cgi - 模版功能
 ```
 <? # 3.t ?>
 <h3>hello, <? echo -n $name ?><h3>
@@ -73,5 +73,3 @@ render_template 3.t
 ## 演示网站
 
 http://www.shellblog.info/demo
-
-http://www.shellblog.com
