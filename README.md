@@ -65,8 +65,15 @@ source template.cgi
 name="momo"
 render_template 3.t
 ```
+<<<<<<< HEAD
 ### 完整的例子
 见 demo 目录
+=======
+
+### lib - 实用函数
+
+### 简单的例子
+>>>>>>> a5c4a694e569073d68cbc07879ec7b76c031b413
 
 ## 演示网站
 
