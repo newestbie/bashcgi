@@ -12,8 +12,7 @@
 
 ## 教程
 
-### param.cgi - get, post, cookie 变量自动导出
-#### http 变量访问
+### http 变量访问
 ```
 #!/bin/bash
 
@@ -30,7 +29,7 @@ echo $_GET_var
 # $_COOKIE_yyyy 访问 cookie 变量
 ```
 
-#### 遍历所有 get(post, cookie) 变量
+### 遍历所有 get(post, cookie) 变量
 ```
 #!/bin/bash
 
@@ -50,7 +49,7 @@ done
 # ${_COOKIE[@]}
 ```
 
-### template.cgi - 模版功能
+### 模版功能
 ```
 <? # 3.t ?>
 <h3>hello, <? echo -n $name ?><h3>
