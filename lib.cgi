@@ -18,5 +18,5 @@ function = {
 }
 
 function indent_filter {
-    sed "2,\$s/^/$TL_LEAD_STR/"
+	sed "2,\$s/^/$TL_LEAD_STR/"
 }
