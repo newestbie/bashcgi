@@ -5,7 +5,7 @@ function render_template {
 	local _line
 	local _t
 	local _code
-	local LEADSTR
+	local TL_LEAD_STR
 
 	local IFS=$'\n'
 	while read -r _line; do
@@ -19,7 +19,7 @@ function render_template {
 				_t=${_line%%<\?*}
 				if [[ ${#_t} -lt ${#_line} ]]; then
 					_flag=1
-					LEADSTR=$_t
+					TL_LEAD_STR=$_t
 					echo -n "$_t"
 					_line=${_line#*<\?}
 				else
