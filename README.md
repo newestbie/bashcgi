@@ -12,8 +12,62 @@
 
 ## 教程
 
-待更新
+### http 变量访问
+```
+#!/bin/bash
+
+# 1.cgi
+
+source param.cgi
+
+echo "Content-Type: text/plain"
+echo
+
+echo $_GET_var
+
+# $_POST_xxxx 获取 post 变量
+# $_COOKIE_yyyy 访问 cookie 变量
+```
+
+### 遍历所有 get(post, cookie) 变量
+```
+#!/bin/bash
+
+# 2.cgi
+
+source param.cgi
+
+echo "Content-Type: text/plain"
+echo
+
+for k in ${_GET[@]}; do
+    eval "v=\$_GET_$k"
+    echo "$k => $v"
+done
+
+# ${_POST[@]}
+# ${_COOKIE[@]}
+```
+
+### 模版功能
+```
+<? # 3.t ?>
+<h3>hello, <? echo -n $name ?><h3>
+```
+
+```
+#!/bin/bash
+
+# 3.cgi
+
+source template.cgi
+
+name="momo"
+render_template 3.t
+```
+
+### 完整的例子
+见 demo 目录
 
 ## 演示网站
-
 http://moyan.tk/demo
