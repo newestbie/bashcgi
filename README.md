@@ -16,6 +16,4 @@
 
 ## 演示网站
 
-http://www.shellblog.info/demo
-
-http://www.shellblog.com
+http://moyan.tk/demo
