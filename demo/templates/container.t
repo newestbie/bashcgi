@@ -3,7 +3,7 @@
       <div class="row-fluid">
 <?
     if [[ ${SPLIT_STYLE[0]} -gt 0 ]]; then
-        context_render leftbar
+        context_render ${leftbar:-leftbar}
     fi
 ?>
 
@@ -13,7 +13,7 @@
 
 <?
     if [[ ${SPLIT_STYLE[2]} -gt 0 ]]; then
-        context_render rightbar
+        context_render ${rightbar:-rightbar}
     fi
 ?>
       </div><!--/row-->

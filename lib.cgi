@@ -14,7 +14,7 @@ function layout_render {
 }
 
 function = {
-	echo -n $@
+	echo -n "$@"
 }
 
 function indent_filter {
