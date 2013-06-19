@@ -70,5 +70,4 @@ render_template 3.t
 见 demo 目录
 
 ## 演示网站
-
-http://www.shellblog.info/demo
+http://moyan.tk/demo
