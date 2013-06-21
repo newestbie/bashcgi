@@ -14,7 +14,7 @@ done < <(echo "$QUERY_STRING" | sed 's/\&/\n/g')
 if [[ "$_RAW_DATA" -gt 0 ]]; then
 	:
 else
-	if [[ "$REQUEST_METHOD" = POST ]]; then
+	if [[ "$REQUEST_METHOD" == "POST" ]]; then
 		while read -r pair; do
 			key=${pair%%=*}
 			if [[ -z "$key" || -z "${key##*[\$"'"'`''"'.%]*}" ]]; then
