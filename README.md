@@ -70,4 +70,4 @@ render_template 3.t
 见 demo 目录
 
 ## 演示网站
-http://moyan.tk/demo
+http://niubie.me/demo
